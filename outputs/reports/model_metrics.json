@@ -1,0 +1,55 @@
+[
+  {
+    "model": "LightGBM",
+    "precision": 0.0413,
+    "recall": 0.9756,
+    "f1": 0.0792,
+    "auc_pr": 0.2708,
+    "tp": 320,
+    "fp": 7436,
+    "fn": 8,
+    "tn": 2440,
+    "threshold": 0.06774331037187657
+  },
+  {
+    "model": "XGBoost",
+    "precision": 0.3273,
+    "recall": 0.3841,
+    "f1": 0.3534,
+    "auc_pr": 0.2837,
+    "tp": 126,
+    "fp": 259,
+    "fn": 202,
+    "tn": 9617,
+    "threshold": 0.795564591884613
+  },
+  {
+    "model": "CatBoost",
+    "precision": 0.1327,
+    "recall": 0.6799,
+    "f1": 0.2221,
+    "auc_pr": 0.2813,
+    "tp": 223,
+    "fp": 1457,
+    "fn": 105,
+    "tn": 8419,
+    "threshold": 0.5265782706727793
+  },
+  {
+    "model": "Ensemble",
+    "precision": 0.2845,
+    "recall": 0.4207,
+    "f1": 0.3395,
+    "auc_pr": 0.2877,
+    "tp": 138,
+    "fp": 347,
+    "fn": 190,
+    "tn": 9529,
+    "threshold": 0.9487388827636898,
+    "weights": {
+      "XGBoost": 0.339,
+      "CatBoost": 0.337,
+      "LightGBM": 0.324
+    }
+  }
+]
