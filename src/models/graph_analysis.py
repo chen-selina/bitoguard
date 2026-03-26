@@ -40,6 +40,13 @@ from itertools import combinations
 warnings.filterwarnings("ignore")
 matplotlib.use("Agg")
 
+# ============================================================
+# 設定中文字型（解決方框問題）
+# ============================================================
+# Windows 系統使用微軟正黑體
+plt.rcParams['font.sans-serif'] = ['Microsoft JhengHei', 'SimHei', 'Arial Unicode MS']
+plt.rcParams['axes.unicode_minus'] = False  # 解決負號顯示問題
+
 RAW_DIR       = Path("data/raw")
 PROCESSED_DIR = Path("data/processed")
 REPORTS_DIR   = Path("outputs/reports")
@@ -472,7 +479,7 @@ def main():
 
     print("\n【合併圖特徵至 features.csv & predict_features.csv】")
     merge_graph_features_to_processed(graph_feat)
-    
+
 # 存檔與合併已經完成，我們用最簡單的方式打印摘要
     print("\n" + "="*55)
     print(f"  圖譜摘要：")

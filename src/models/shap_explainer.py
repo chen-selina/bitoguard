@@ -24,6 +24,13 @@ warnings.filterwarnings("ignore")
 matplotlib.use("Agg")  # 不開視窗，直接存圖
 
 # ============================================================
+# 設定中文字型（解決方框問題）
+# ============================================================
+# Windows 系統使用微軟正黑體
+plt.rcParams['font.sans-serif'] = ['Microsoft JhengHei', 'SimHei', 'Arial Unicode MS']
+plt.rcParams['axes.unicode_minus'] = False  # 解決負號顯示問題
+
+# ============================================================
 # 路徑設定
 # ============================================================
 PROCESSED_DIR = Path("data/processed")
