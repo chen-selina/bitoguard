@@ -25,6 +25,16 @@ python regenerate_plots.py
 - SHAP 特徵重要性圖（shap_summary.png, shap_importance.png）
 - 個別用戶 Waterfall 圖（waterfall_user_*.png）
 
+## 📝 修正提交檔案格式
+
+如果 submission.csv 包含多餘的欄位（如 risk_score），執行：
+
+```bash
+python fix_submission.py
+```
+
+這會將 submission.csv 修正為只包含 user_id 和 status 兩個欄位（符合提交格式要求）。
+
 ## 📊 完整 Pipeline 執行
 
 ```bash
