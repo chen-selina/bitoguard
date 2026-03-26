@@ -217,67 +217,51 @@ def build_graph(tables: dict, full_blacklist: set) -> nx.Graph:
 # ============================================================
 # ✅ v4 核心修改：graph_bl_* 特徵改用 train_blacklist
 # ============================================================
-def compute_graph_features(G: nx.Graph, train_blacklist: set, full_blacklist: set) -> pd.DataFrame:
+def compute_graph_features(G: nx.Graph) -> pd.DataFrame:
     """
-    計算圖特徵。
-
-    ✅ graph_bl_neighbors / graph_bl_2hop / graph_bl_component：
-       只使用 train_blacklist（訓練集已知黑名單），
-       測試集與預測集用戶的黑名單身份不會洩漏進特徵。
-
-    is_blacklist 欄位（僅輸出用，不進模型）使用 full_blacklist。
+    【無洩漏版本】
+    移除所有依賴 blacklist 集合的計算。
+    只保留純圖論結構特徵，這些特徵反映用戶在網路中的「位置」與「影響力」。
     """
-    print("  v4：預先計算所有 connected components（避免 O(N×M) 重複）...")
-    node_to_comp  = {}
-    comp_bl_count = {}
-    for comp_id, comp in enumerate(nx.connected_components(G)):
-        # ✅ 用 train_blacklist 計算每個 component 內的已知黑名單數
-        bl_cnt = sum(1 for n in comp if n in train_blacklist)
+    print("  v3.1：預先計算連通分量大小（不看標籤）...")
+    node_to_comp_size = {}
+    for comp in nx.connected_components(G):
+        c_size = len(comp)
         for n in comp:
-            node_to_comp[n]        = comp_id
-            comp_bl_count[comp_id] = bl_cnt
+            node_to_comp_size[n] = c_size
 
-    print("  計算 PageRank...")
-    pagerank   = nx.pagerank(G, weight="weight", max_iter=200)
-    print("  計算 Clustering Coefficient...")
+    print("  計算 PageRank (反映資金節點重要性)...")
+    pagerank = nx.pagerank(G, weight="weight", max_iter=200)
+    
+    print("  計算 Clustering Coefficient (反映分團緊密度)...")
     clustering = nx.clustering(G, weight="weight")
 
+    # 預建鄰居表以提升效能
     adj = {n: set(G.neighbors(n)) for n in G.nodes()}
 
     rows = []
     for uid in G.nodes():
         neighbors = adj[uid]
         degree    = len(neighbors)
-
-        # ✅ 只用 train_blacklist 計算黑名單鄰居數
-        bl_neighbors = sum(1 for n in neighbors if n in train_blacklist)
-
+        
+        # 計算 2-hop 鄰居總數 (網路擴張度)
         hop2 = set()
         for n in neighbors:
             hop2 |= adj[n]
         hop2.discard(uid)
         hop2 -= neighbors
-
-        # ✅ 只用 train_blacklist 計算 2-hop 黑名單數
-        bl_2hop = sum(1 for n in hop2 if n in train_blacklist)
-
-        comp_id = node_to_comp.get(uid, -1)
-        # ✅ 只用 train_blacklist 計算 component 內黑名單數
-        bl_in_component = comp_bl_count.get(comp_id, 0)
-
+        
         rows.append({
             "user_id":            uid,
             "graph_degree":       degree,
-            "graph_bl_neighbors": bl_neighbors,   # ✅ 無洩漏
-            "graph_bl_2hop":      bl_2hop,         # ✅ 無洩漏
-            "graph_bl_component": bl_in_component, # ✅ 無洩漏
+            "graph_2hop_count":   len(hop2),            # 改為計算總數，而非黑名單數
+            "graph_comp_size":    node_to_comp_size.get(uid, 1), # 改為群組總人數
             "graph_clustering":   round(clustering.get(uid, 0), 4),
             "graph_pagerank":     round(pagerank.get(uid, 0), 6),
-            # is_blacklist 僅用於後續分析輸出，不進模型特徵
-            "is_blacklist":       1 if uid in full_blacklist else 0,
         })
+        
     feat_df = pd.DataFrame(rows)
-    print(f"  圖特徵完成：{len(feat_df)} 位用戶")
+    print(f"  ✅ 淨化完成：產生 {len(feat_df)} 位用戶的純結構特徵")
     return feat_df
 
 
@@ -466,7 +450,7 @@ def main():
     t1 = time.time()
     print("【計算圖特徵】")
     # ✅ v4：傳入 train_blacklist（特徵計算）與 full_blacklist（is_blacklist 標記）
-    graph_feat = compute_graph_features(G, train_blacklist, full_blacklist)
+    graph_feat = compute_graph_features(G)
     print(f"  ⏱ 圖特徵耗時：{time.time() - t1:.1f}s\n")
 
     t2 = time.time()
@@ -488,12 +472,17 @@ def main():
 
     print("\n【合併圖特徵至 features.csv & predict_features.csv】")
     merge_graph_features_to_processed(graph_feat)
+    
+# 存檔與合併已經完成，我們用最簡單的方式打印摘要
+    print("\n" + "="*55)
+    print(f"  圖譜摘要：")
+    print(f"  總節點數：{G.number_of_nodes():,}")
+    print(f"  總邊數  ：{G.number_of_edges():,}")
+    print(f"  ✅ 圖特徵計算與合併已完成（無洩漏版本）")
+    print("="*55)
 
-    print(f"\n  總節點：{G.number_of_nodes():,}  總邊：{G.number_of_edges():,}  黑名單節點：{len(full_blacklist & set(G.nodes())):,}")
-    suspects = graph_feat[(graph_feat["is_blacklist"] == 0) & (graph_feat["graph_bl_neighbors"] > 0)]
-    print(f"  直接連到訓練集黑名單的非黑名單用戶：{len(suspects):,} 位（潛在人頭戶）")
     print(f"\n  ⏱ 總耗時：{time.time() - t0:.1f}s")
-    print("\n關聯圖譜分析完成！下一步：執行 app/dashboard/dashboard.py")
+    print("\n關聯圖譜分析完成！下一步：執行 src/data/handle_imbalance.py")
 
 
 if __name__ == "__main__":
