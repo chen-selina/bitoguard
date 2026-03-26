@@ -8,42 +8,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 11.707,
-        "shap": 0.6232,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 648.0,
+        "shap": 8.3017,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "twd_deposit_total",
-        "label": "台幣入金總額",
-        "value": 9.798,
-        "shap": 0.5767,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 7.0,
+        "shap": 0.473,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "activity_density",
-        "label": "activity_density",
-        "value": 2.2103,
-        "shap": 0.54,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 11.707,
+        "shap": 0.3116,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 499900.0,
-        "shap": 0.3463,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_2hop",
+        "label": "graph_bl_2hop",
+        "value": 17.0,
+        "shap": -0.2859,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 5,
-        "feature": "twd_deposit_count",
-        "label": "台幣入金次數",
-        "value": 4.3333,
-        "shap": 0.3134,
+        "feature": "activity_density",
+        "label": "activity_density",
+        "value": 2.2103,
+        "shap": 0.2151,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -59,42 +59,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 6.4429,
-        "shap": 0.591,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 648.0,
+        "shap": 8.1167,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 280198.0,
-        "shap": 0.4795,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_2hop",
+        "label": "graph_bl_2hop",
+        "value": 2.0,
+        "shap": -0.3123,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 3,
-        "feature": "twd_deposit_total",
-        "label": "台幣入金總額",
-        "value": 5.46,
-        "shap": 0.4429,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 1.0,
+        "shap": 0.2987,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 31133.1111,
-        "shap": 0.4324,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 6.4429,
+        "shap": 0.267,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 5,
-        "feature": "twd_deposit_count",
-        "label": "台幣入金次數",
-        "value": 3.0,
-        "shap": 0.2942,
+        "feature": "graph_degree",
+        "label": "graph_degree",
+        "value": 4.0,
+        "shap": 0.2342,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -110,42 +110,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 10.9799,
-        "shap": 0.6369,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 648.0,
+        "shap": 7.9853,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "twd_deposit_total",
-        "label": "台幣入金總額",
-        "value": 9.3,
-        "shap": 0.5544,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 10.9799,
+        "shap": 0.395,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 59375.0,
-        "shap": 0.4336,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 3.0,
+        "shap": 0.3545,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 475000.0,
-        "shap": 0.4033,
+        "feature": "graph_degree",
+        "label": "graph_degree",
+        "value": 5.0,
+        "shap": 0.3144,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 5,
-        "feature": "activity_density",
-        "label": "activity_density",
-        "value": 0.9687,
-        "shap": 0.3681,
+        "feature": "twd_deposit_mean",
+        "label": "台幣入金平均金額",
+        "value": 2.1235,
+        "shap": 0.1788,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -161,42 +161,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "activity_density",
-        "label": "activity_density",
-        "value": 2.6519,
-        "shap": 0.674,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 648.0,
+        "shap": 8.2446,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 6.0958,
-        "shap": 0.5493,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 6.0,
+        "shap": 0.504,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 265000.0,
-        "shap": 0.4207,
+        "feature": "graph_degree",
+        "label": "graph_degree",
+        "value": 8.0,
+        "shap": 0.3517,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 37857.1429,
-        "shap": 0.3853,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_2hop",
+        "label": "graph_bl_2hop",
+        "value": 21.0,
+        "shap": -0.3429,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 5,
-        "feature": "account_age_days",
-        "label": "account_age_days",
-        "value": -0.559,
-        "shap": 0.3607,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 6.0958,
+        "shap": 0.2722,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -212,42 +212,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 14.6418,
-        "shap": 0.8601,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 648.0,
+        "shap": 8.2632,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "twd_deposit_total",
-        "label": "台幣入金總額",
-        "value": 12.4,
-        "shap": 0.8377,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 9.0,
+        "shap": 0.4671,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 27391.3043,
-        "shap": 0.5046,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 14.6418,
+        "shap": 0.4394,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 630000.0,
-        "shap": 0.464,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_2hop",
+        "label": "graph_bl_2hop",
+        "value": 41.0,
+        "shap": -0.2761,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 5,
-        "feature": "twd_active_days",
-        "label": "twd_active_days",
-        "value": 10.5,
-        "shap": -0.4215,
+        "feature": "ip_unique_count",
+        "label": "使用不同 IP 數量",
+        "value": 9.0,
+        "shap": -0.2448,
         "direction": "↓ 降低風險"
       }
     ],
@@ -263,42 +263,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 12.14,
-        "shap": 0.6398,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 1.0,
+        "shap": 7.7805,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "twd_deposit_total",
-        "label": "台幣入金總額",
-        "value": 10.24,
-        "shap": 0.5559,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 1.0,
+        "shap": -2.0535,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 3,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 522000.0,
-        "shap": 0.42,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 12.14,
+        "shap": 0.1228,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 65250.0,
-        "shap": 0.3864,
+        "feature": "crypto_inout_ratio",
+        "label": "虛擬幣快進快出比率",
+        "value": 36.4718,
+        "shap": 0.1066,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 5,
-        "feature": "account_age_days",
-        "label": "account_age_days",
-        "value": -0.5414,
-        "shap": 0.3449,
+        "feature": "twd_deposit_mean",
+        "label": "台幣入金平均金額",
+        "value": 1.7111,
+        "shap": 0.0978,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -314,42 +314,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "twd_deposit_total",
-        "label": "台幣入金總額",
-        "value": 7.82,
-        "shap": 0.6616,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 648.0,
+        "shap": 8.254,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 9.3256,
-        "shap": 0.5708,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 9.0,
+        "shap": 0.4468,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 40100.0,
-        "shap": 0.5132,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 9.3256,
+        "shap": 0.3388,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 401000.0,
-        "shap": 0.4733,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_2hop",
+        "label": "graph_bl_2hop",
+        "value": 19.0,
+        "shap": -0.3032,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 5,
-        "feature": "age",
-        "label": "age",
-        "value": 1.7059,
-        "shap": 0.2721,
+        "feature": "twd_deposit_mean",
+        "label": "台幣入金平均金額",
+        "value": 1.0508,
+        "shap": 0.1781,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -365,26 +365,26 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 14.5493,
-        "shap": 0.8013,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 1.0,
+        "shap": 10.1679,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "twd_deposit_total",
-        "label": "台幣入金總額",
-        "value": 12.33,
-        "shap": 0.651,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 0.0,
+        "shap": 0.3333,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 626500.0,
-        "shap": 0.487,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 14.5493,
+        "shap": 0.1396,
         "direction": "↑ 拉高風險"
       },
       {
@@ -392,15 +392,15 @@
         "feature": "activity_density",
         "label": "activity_density",
         "value": 1.5148,
-        "shap": 0.4192,
+        "shap": 0.1253,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 5,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 44750.0,
-        "shap": 0.3789,
+        "feature": "ip_diversity_ratio",
+        "label": "IP 多樣性比率",
+        "value": -0.4219,
+        "shap": 0.091,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -416,42 +416,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 7.2242,
-        "shap": 0.5597,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 648.0,
+        "shap": 8.0744,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 364956.0,
-        "shap": 0.4733,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 7.2242,
+        "shap": 0.3414,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "twd_deposit_total",
-        "label": "台幣入金總額",
-        "value": 5.902,
-        "shap": 0.4671,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_2hop",
+        "label": "graph_bl_2hop",
+        "value": 7.0,
+        "shap": -0.3369,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 4,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 30413.0,
-        "shap": 0.3605,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 3.0,
+        "shap": 0.2686,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 5,
-        "feature": "account_age_days",
-        "label": "account_age_days",
-        "value": -0.5176,
-        "shap": 0.3206,
+        "feature": "twd_deposit_mean",
+        "label": "台幣入金平均金額",
+        "value": 1.2844,
+        "shap": 0.1788,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -467,42 +467,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "twd_deposit_total",
-        "label": "台幣入金總額",
-        "value": 9.3534,
-        "shap": 0.6824,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 1.0,
+        "shap": 10.1396,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 11.3043,
-        "shap": 0.6075,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 0.0,
+        "shap": 0.3231,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 60370.375,
-        "shap": 0.4532,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 11.3043,
+        "shap": 0.1263,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 482963.0,
-        "shap": 0.4076,
+        "feature": "age",
+        "label": "age",
+        "value": 1.4706,
+        "shap": 0.0998,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 5,
-        "feature": "age",
-        "label": "age",
-        "value": 1.4706,
-        "shap": 0.3019,
+        "feature": "twd_deposit_total",
+        "label": "台幣入金總額",
+        "value": 9.3534,
+        "shap": 0.0782,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -518,43 +518,43 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 27.0089,
-        "shap": 1.387,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 648.0,
+        "shap": 8.0741,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "twd_deposit_total",
-        "label": "台幣入金總額",
-        "value": 9.7547,
-        "shap": 0.6444,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 27.0089,
+        "shap": 0.901,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "twd_withdraw_total",
-        "label": "台幣出金總額",
-        "value": 231.0607,
-        "shap": -0.5452,
-        "direction": "↓ 降低風險"
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 16.0,
+        "shap": 0.5307,
+        "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 1555567.0,
-        "shap": 0.4119,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_degree",
+        "label": "graph_degree",
+        "value": 320.0,
+        "shap": -0.3633,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 5,
-        "feature": "activity_density",
-        "label": "activity_density",
-        "value": 1.861,
-        "shap": 0.3456,
-        "direction": "↑ 拉高風險"
+        "feature": "ip_unique_count",
+        "label": "使用不同 IP 數量",
+        "value": 11.5,
+        "shap": -0.3023,
+        "direction": "↓ 降低風險"
       }
     ],
     "nl_summary": "台幣出入金比率高達 459%，資金幾乎全數快進快出；深夜（23:00–05:00）交易比率達 76%，異常時段活躍；使用了 12 個不同 IP 位址進行操作；KYC 驗證未完成（等級 0），僅完成基本驗證；使用了 20 個不同虛擬錢包地址",
@@ -569,42 +569,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 41250.0,
-        "shap": 0.5194,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 648.0,
+        "shap": 8.1174,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 165000.0,
-        "shap": 0.4416,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 3.0,
+        "shap": 0.4481,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "activity_density",
-        "label": "activity_density",
-        "value": 1.737,
-        "shap": 0.4379,
+        "feature": "graph_degree",
+        "label": "graph_degree",
+        "value": 7.0,
+        "shap": 0.4262,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "account_age_days",
-        "label": "account_age_days",
-        "value": -0.5499,
-        "shap": 0.3847,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_2hop",
+        "label": "graph_bl_2hop",
+        "value": 4.0,
+        "shap": -0.3501,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 5,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 3.7365,
-        "shap": 0.3641,
+        "feature": "activity_density",
+        "label": "activity_density",
+        "value": 1.737,
+        "shap": 0.2311,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -620,43 +620,43 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 5.0567,
-        "shap": 0.6001,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 648.0,
+        "shap": 8.0168,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 245130.0,
-        "shap": 0.4899,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 14.0,
+        "shap": 0.6754,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 49026.0,
-        "shap": 0.4574,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_2hop",
+        "label": "graph_bl_2hop",
+        "value": 20.0,
+        "shap": -0.3373,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 4,
-        "feature": "account_age_days",
-        "label": "account_age_days",
-        "value": -0.4669,
-        "shap": 0.3257,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 5.0567,
+        "shap": 0.2669,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 5,
-        "feature": "twd_to_crypto_gap_hr",
-        "label": "twd_to_crypto_gap_hr",
-        "value": 1.5455,
-        "shap": 0.3213,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_degree",
+        "label": "graph_degree",
+        "value": 36.0,
+        "shap": -0.2404,
+        "direction": "↓ 降低風險"
       }
     ],
     "nl_summary": "深夜（23:00–05:00）交易比率達 44%，異常時段活躍；KYC 驗證未完成（等級 0），僅完成基本驗證",
@@ -671,42 +671,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 4.7382,
-        "shap": 0.7995,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 1.0,
+        "shap": 12.5048,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 208000.0,
-        "shap": 0.4841,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 0.0,
+        "shap": 0.3538,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "activity_density",
-        "label": "activity_density",
-        "value": 1.4345,
-        "shap": 0.4634,
+        "feature": "graph_degree",
+        "label": "graph_degree",
+        "value": 0.0,
+        "shap": 0.0928,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "account_age_days",
-        "label": "account_age_days",
-        "value": -0.5523,
-        "shap": 0.3551,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 4.7382,
+        "shap": 0.072,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 5,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 29714.2857,
-        "shap": 0.3434,
+        "feature": "ip_diversity_ratio",
+        "label": "IP 多樣性比率",
+        "value": -0.4286,
+        "shap": 0.0634,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -722,42 +722,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "activity_density",
-        "label": "activity_density",
-        "value": 2.3412,
-        "shap": 0.6544,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 648.0,
+        "shap": 8.0774,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 161000.0,
-        "shap": 0.4623,
+        "feature": "graph_degree",
+        "label": "graph_degree",
+        "value": 2.0,
+        "shap": 0.4045,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 40250.0,
-        "shap": 0.4187,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 1.0,
+        "shap": 0.3675,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 3.688,
-        "shap": 0.4059,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_2hop",
+        "label": "graph_bl_2hop",
+        "value": 8.0,
+        "shap": -0.344,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 5,
-        "feature": "account_age_days",
-        "label": "account_age_days",
-        "value": -0.5562,
-        "shap": 0.4054,
+        "feature": "activity_density",
+        "label": "activity_density",
+        "value": 2.3412,
+        "shap": 0.2519,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -773,34 +773,34 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 11.0235,
-        "shap": 0.6773,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 1.0,
+        "shap": 10.1758,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "twd_deposit_total",
-        "label": "台幣入金總額",
-        "value": 9.313,
-        "shap": 0.5222,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 0.0,
+        "shap": 0.3215,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 475650.0,
-        "shap": 0.5129,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 11.0235,
+        "shap": 0.1336,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 52850.0,
-        "shap": 0.4299,
+        "feature": "twd_deposit_total",
+        "label": "台幣入金總額",
+        "value": 9.313,
+        "shap": 0.1231,
         "direction": "↑ 拉高風險"
       },
       {
@@ -808,7 +808,7 @@
         "feature": "account_age_days",
         "label": "account_age_days",
         "value": -0.521,
-        "shap": 0.3485,
+        "shap": 0.0629,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -824,42 +824,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 40500.0,
-        "shap": 0.5981,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 0.0,
+        "shap": -2.0041,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 2,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 162000.0,
-        "shap": 0.5038,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_degree",
+        "label": "graph_degree",
+        "value": 0.0,
+        "shap": -0.6565,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 3,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 3.7061,
-        "shap": 0.3918,
+        "feature": "age",
+        "label": "age",
+        "value": 1.2941,
+        "shap": 0.0585,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "account_age_days",
-        "label": "account_age_days",
-        "value": -0.4814,
-        "shap": 0.3418,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 0.0,
+        "shap": -0.0372,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 5,
-        "feature": "activity_density",
-        "label": "activity_density",
-        "value": 1.0314,
-        "shap": 0.3052,
+        "feature": "kyc_l1_to_l2_days",
+        "label": "KYC L1 到 L2 完成天數",
+        "value": 1.1315,
+        "shap": 0.0301,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -875,42 +875,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 11.6426,
-        "shap": 0.7071,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 648.0,
+        "shap": 8.2863,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "twd_deposit_total",
-        "label": "台幣入金總額",
-        "value": 9.8,
-        "shap": 0.5847,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 11.6426,
+        "shap": 0.4143,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 500000.0,
-        "shap": 0.5795,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_2hop",
+        "label": "graph_bl_2hop",
+        "value": 5.0,
+        "shap": -0.3372,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 4,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 38461.5385,
-        "shap": 0.5695,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 1.0,
+        "shap": 0.2573,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 5,
-        "feature": "account_age_days",
-        "label": "account_age_days",
-        "value": -0.4769,
-        "shap": 0.333,
+        "feature": "twd_deposit_mean",
+        "label": "台幣入金平均金額",
+        "value": 1.3651,
+        "shap": 0.1787,
         "direction": "↑ 拉高風險"
       }
     ],
@@ -926,43 +926,43 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 8.5279,
-        "shap": 0.6868,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 0.0,
+        "shap": -2.0458,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 2,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 369500.0,
-        "shap": 0.6131,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_degree",
+        "label": "graph_degree",
+        "value": 0.0,
+        "shap": -0.6496,
+        "direction": "↓ 降低風險"
       },
       {
         "rank": 3,
-        "feature": "twd_deposit_total",
-        "label": "台幣入金總額",
-        "value": 7.2,
-        "shap": 0.5397,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 8.5279,
+        "shap": 0.0773,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 73900.0,
-        "shap": 0.3827,
+        "feature": "ip_diversity_ratio",
+        "label": "IP 多樣性比率",
+        "value": -0.4688,
+        "shap": 0.0554,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 5,
-        "feature": "activity_density",
-        "label": "activity_density",
-        "value": 0.9893,
-        "shap": 0.2812,
-        "direction": "↑ 拉高風險"
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 0.0,
+        "shap": -0.0352,
+        "direction": "↓ 降低風險"
       }
     ],
     "nl_summary": "最短滯留時間僅 364 秒，疑似存入後立即提領；虛擬幣快進快出比率達 2572%；KYC 驗證未完成（等級 0），僅完成基本驗證",
@@ -977,42 +977,42 @@
     "top_factors": [
       {
         "rank": 1,
-        "feature": "crypto_withdraw_total",
-        "label": "虛擬幣出金總量",
-        "value": 5.259,
-        "shap": 0.6065,
+        "feature": "graph_bl_component",
+        "label": "graph_bl_component",
+        "value": 648.0,
+        "shap": 7.9253,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 2,
-        "feature": "swap_total_twd",
-        "label": "一鍵買賣台幣總額",
-        "value": 231500.0,
-        "shap": 0.4614,
+        "feature": "graph_bl_neighbors",
+        "label": "graph_bl_neighbors",
+        "value": 4.0,
+        "shap": 0.4495,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 3,
-        "feature": "swap_mean_twd",
-        "label": "一鍵買賣平均台幣金額",
-        "value": 21045.4545,
-        "shap": 0.45,
+        "feature": "graph_degree",
+        "label": "graph_degree",
+        "value": 9.0,
+        "shap": 0.3122,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 4,
-        "feature": "account_age_days",
-        "label": "account_age_days",
-        "value": -0.5492,
-        "shap": 0.3515,
+        "feature": "crypto_withdraw_total",
+        "label": "虛擬幣出金總量",
+        "value": 5.259,
+        "shap": 0.2622,
         "direction": "↑ 拉高風險"
       },
       {
         "rank": 5,
-        "feature": "activity_density",
-        "label": "activity_density",
-        "value": 1.0364,
-        "shap": 0.3218,
+        "feature": "account_age_days",
+        "label": "account_age_days",
+        "value": -0.5492,
+        "shap": 0.1847,
         "direction": "↑ 拉高風險"
       }
     ],

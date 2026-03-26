@@ -3,7 +3,7 @@ run_pipeline.py
 位置：bitoguard/（根目錄）
 
 功能：一鍵依序執行完整 BitoGuard Pipeline，
-      並在每個步驟前後印出進度與耗時。
+     並在每個步驟前後印出進度與耗時。
 
 使用方式：python run_pipeline.py
 選項：
@@ -25,7 +25,7 @@ from pathlib import Path
 from datetime import datetime
 
 # ============================================================
-# Pipeline 步驟定義
+# Pipeline 步驟定義 (已修正執行順序)
 # ============================================================
 STEPS = [
     {
@@ -43,32 +43,32 @@ STEPS = [
         "skippable": False,
     },
     {
-        "name":    "③ 不平衡處理",
+        "name":    "③ 關聯圖譜",
+        "script":  "src/models/graph_analysis.py",
+        "flag":    "graph",
+        "desc":    "NetworkX 關聯圖 + 圖特徵合併",
+        "skippable": True,
+    },
+    {
+        "name":    "④ 不平衡處理",
         "script":  "src/data/handle_imbalance.py",
         "flag":    "imbalance",
         "desc":    "SMOTE + 切分訓練/測試集",
         "skippable": False,
     },
     {
-        "name":    "④ 模型訓練",
+        "name":    "⑤ 模型訓練",
         "script":  "src/models/train_model.py",
         "flag":    "train",
         "desc":    "XGBoost / LightGBM / Isolation Forest + Ensemble",
         "skippable": False,
     },
     {
-        "name":    "⑤ SHAP 解釋",
+        "name":    "⑥ SHAP 解釋",
         "script":  "src/models/shap_explainer.py",
         "flag":    "shap",
         "desc":    "生成個人風險診斷書與特徵重要性圖",
         "skippable": False,
-    },
-    {
-        "name":    "⑥ 關聯圖譜",
-        "script":  "src/models/graph_analysis.py",
-        "flag":    "graph",
-        "desc":    "NetworkX 關聯圖 + 圖特徵合併",
-        "skippable": True,
     },
 ]
 

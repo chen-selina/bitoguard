@@ -52,3 +52,9 @@ twd_to_crypto_gap_hr,0.0180555555555555,0.0702777777777777
 first_to_last_days,2.5871875,14.357395833333332
 activity_density,1.0,1.4458300609201507
 account_age_days,281.7141550925926,494.68673611111114
+graph_degree,0.0,1.0
+graph_bl_neighbors,0.0,1.0
+graph_bl_2hop,0.0,1.0
+graph_bl_component,0.0,1.0
+graph_clustering,0.0,1.0
+graph_pagerank,6e-06,1.3000000000000001e-05
