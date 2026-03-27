@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 保留這些資料夾（dashboard 需要）
+!data/
+!outputs/
+!models/
+
+# 但排除過大的訓練資料（如果有的話）
+# data/raw/*.csv
+# 如果檔案太大可以取消註解上面這行
+
+# 臨時檔案
+*.log
+*.tmp
+catboost_info/tmp/
