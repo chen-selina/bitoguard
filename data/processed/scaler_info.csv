@@ -1,8 +1,7 @@
 feature,center,scale
-age,33.0,17.0
 career_code,17.0,14.0
 kyc_level,2.0,1.0
-account_age_days,476.3145404656945,560.9569791666665
+account_age_days,476.6878071841204,560.9569791666668
 kyc_l1_to_l2_days,0.905625,9.79082175925926
 confirmed_to_l2_days,0.9737731481481482,10.654282407407406
 kyc_rushed,1.0,1.0

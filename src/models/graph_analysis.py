@@ -165,7 +165,6 @@ def build_graph(tables: dict, full_blacklist: set) -> nx.Graph:
             uid   = row["user_id"]
             is_bl = uid in full_blacklist   # 僅供節點視覺化標記
             G.add_node(uid, is_blacklist=is_bl,
-                age=int(row.get("age", 0)) if pd.notna(row.get("age")) else 0,
                 career=int(row.get("career", 0)),
                 kyc_level=(2 if pd.notna(row.get("level2_finished_at"))
                            else 1 if pd.notna(row.get("level1_finished_at")) else 0),

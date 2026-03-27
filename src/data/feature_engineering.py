@@ -33,8 +33,7 @@ PREDICT_OUTPUT_PATH = PROCESSED_DIR / "predict_features.csv"
 # 若某欄位不存在（如 crypto 表缺失）會自動略過
 # ============================================================
 SELECTED_FEATURES = [
-    # --- 用戶基本資料（3 個）---
-    "age",                      # 年齡：年輕低收帳號風險較高
+    # --- 用戶基本資料（2 個）---
     "career_code",              # 職業代碼：特定職業與詐騙相關
     "kyc_level",                # KYC 完成等級（0/1/2）
 
@@ -121,7 +120,7 @@ def build_kyc_features(user: pd.DataFrame) -> pd.DataFrame:
     """
     來源：user_info.csv
     產出：
-      - age, career_code, kyc_level          （基本資料）
+      - career_code, kyc_level                （基本資料）
       - account_age_days                      （帳號存活天數）
       - kyc_l1_to_l2_days                     （KYC Level1→Level2 升級速度）
       - confirmed_to_l2_days                  （從確認帳號到完成 Level2）
@@ -136,7 +135,6 @@ def build_kyc_features(user: pd.DataFrame) -> pd.DataFrame:
     feat = user[["user_id"]].copy()
 
     # --- 基本資料 ---
-    feat["age"] = pd.to_numeric(user.get("age"), errors="coerce").fillna(0)
     feat["career_code"] = user.get("career", pd.Series(0, index=user.index)).fillna(0).astype(int)
 
     # --- KYC 完成等級 ---
